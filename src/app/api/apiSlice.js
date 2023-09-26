@@ -2,7 +2,7 @@ import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react'
 import { setCredentials } from '../../features/auth/authSlice'
 
 const baseQuery = fetchBaseQuery({
-    baseUrl: 'http://flexisaf-notes-api.onrender.com',
+    baseUrl: 'https://flexisaf-notes-api.onrender.com',
     credentials: 'include',
     prepareHeaders: (Headers, {getState}) => {
         const token = getState().auth.token
